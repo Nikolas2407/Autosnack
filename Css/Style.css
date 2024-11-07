@@ -1,73 +1,72 @@
-:root{
+:root {
     --primary: #ffffff;
     --secondary: #000000;
-    --nav:#F4F4F4;
-    --footer:#232323;
-    --tertiary:#FF6445;
+    --nav: #F4F4F4;
+    --footer: #232323;
+    --tertiary: #FF6445;
 }
-*{
+
+* {
     margin: 0;
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins", serif;
 }
-body{
-    background-color: var(--secondary);
+
+body {
+    background-color: var(--primary);
 }
-header{
+
+header {
     background: var(--nav);
     width: 100%;
     height: 70px;
     display: flex;
+    justify-content: space-between;
 }
-header .logo{
+
+header .logo {
     align-items: center;
     justify-content: center;
 
 }
-header .logo img{
-    margin-top: 0.5%;
-    width: 250px;
+
+header .logo img {
+    margin-top: 1.2%;
+    width: 230px;
     border-right: 2px solid var(--secondary);
     align-items: center;
     justify-content: center;
 }
-header .nav{
-    width: 80%;
+
+header .nav {
+    width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
-header .nav li{
+
+header .nav li {
     list-style: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    
+
 }
 header .nav li a{
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--secondary);
-    transition: .5s;
     text-transform: uppercase;
-
 }
 header .nav li a::before{
     content: '';
-
-
-
-
-
-
-
-
-    
     position: absolute;
-    bottom: -2px;
     width: 100%;
+    bottom: -2px;
     height: 2px;
-    background: var(--footer);
+    background: var(--secondary);
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
@@ -75,28 +74,30 @@ header .nav li a::before{
 header .nav li a:hover::before{
     transform: scaleX(1);
     transform-origin: left;
+    
 }
-header .nav-toggle{
-    justify-content: center;
-    margin: auto;
-}
-header .nav-toggle ion-icon{
+header .nav-toggle {
+    position: relative;
     font-size: 2.5rem;
-    padding: 0 20px;
-    line-height: 60px;
+    padding: 0 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: none;
+    cursor: pointer;
 }
-@media (max-width:768px){
-    body{
-        background: var(--primary);
+
+
+
+@media (max-width:768px) {
+
+    header .nav-toggle{
+        display: block;
     }
-    header{
-        width: 100%;
-    }
-    header .logo img{
+    header .logo img {
         border: none;
     }
-    header .nav{
+    header .nav {
         flex-direction: column;
         margin: 0;
         background: var(--nav);
@@ -107,16 +108,169 @@ header .nav-toggle ion-icon{
         padding: 20px 0;
         border-radius: 0 0 20px 20px;
         height: calc(60% - 20px);
-        overflow-y: auto; 
+        overflow-y: auto;
+        left: 0%;
+        transition: left 0.3s;
     }
-    header .nav li a{
-        transition: .5s;
+    header .nav-visible{
+        left: 100%;
     }
-    header .nav li a:hover{
-        color: var(--tertiary);
-    }
-
-
     
 
 }
+.container{
+    margin: auto;
+    max-width: 99%;
+    height: auto;
+    background: url(/img/Fondos/Banner.png)center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 5%;
+    border-radius: 20px;
+    color: var(--primary);
+}
+.container h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 90px;
+    
+}
+.container p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    width: 50%;
+    font-weight: 300;
+}
+.container button{
+    padding: 1% 2%;
+    border-radius: 20px;
+    background: var(--tertiary);
+    font-size: 1rem;
+    transition: .3s;
+}
+.container button:hover{
+    font-size: 1.2rem;
+}
+.container button a{
+    color: var(--primary);
+}
+
+@media (max-width:768px){
+    .container h1{
+        font-size: 4rem;
+    }
+    
+}
+.container-carousel {
+    position: relative;
+    margin: 20px auto;
+    max-width: 99%;
+    height: auto;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+  
+}
+
+.carruseles {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slider-section {
+    width: calc(100% / 10);
+    height: auto;
+    background:url(/img/Fondos/Fondo\ Maquinas.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.slider-section .content{
+    padding: 8% 12%;
+}
+.slider-section h1{
+    width: 100%;
+    font-size: 4rem;
+}
+.slider-section p{
+    text-align: justify;
+    width: 90%;
+    margin-top: 10%;
+}
+.slider-section button{
+    margin-top: 10%;
+    padding:3%;
+    background: var(--tertiary);
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: .3s;
+}
+.slider-section button:hover{
+    font-size: 1.2rem;
+}
+.slider-section button a{
+    color: var(--primary);
+}
+.slider-section .content-2{
+    text-align: center;
+    padding: 10%;
+}
+.slider-section img{
+    margin: auto;
+    width: 70%;
+}
+@media (max-width:768px){
+    .slider-section{
+        width: calc(100% / 10);
+        text-align: center;
+        grid-template-columns: 1fr;
+        
+    }
+    .slider-section h1{
+        padding: 1%;
+        font-size: 2rem;
+    }
+    .slider-section p{
+        width: 100%;
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+}
+
+
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--secondary);
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
