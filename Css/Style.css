@@ -161,6 +161,8 @@ header .nav-toggle {
     }
     
 }
+
+
 .container-carousel {
     position: relative;
     margin: 20px auto;
@@ -177,11 +179,13 @@ header .nav-toggle {
     width: 1000%;
     height: 100%;
     display: flex;
+    transition: transform 0.5s ease;
 
 }
 
 .slider-section {
     width: calc(100% / 10);
+    box-sizing: border-box;
     height: auto;
     background:url(/img/Fondos/Fondo\ Maquinas.png) center;
     background-size: cover;
@@ -189,19 +193,50 @@ header .nav-toggle {
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+
+.slider-section-2{
+    width: calc(100% / 10);
+    height: auto;
+    background:url(/img/Fondos/Fondo\ Maquinas-2.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 .slider-section .content{
-    padding: 8% 12%;
+    padding: 5% 12%;
+}
+.slider-section-2 .content{
+    padding: 5% 12%;
+    color: var(--primary);
 }
 .slider-section h1{
+    width: 100%;
+    font-size: 4rem;
+}
+.slider-section-2 h1{
     width: 100%;
     font-size: 4rem;
 }
 .slider-section p{
     text-align: justify;
     width: 90%;
-    margin-top: 10%;
+    margin-top: 5%;
+}
+.slider-section-2 p{
+    text-align: justify;
+    width: 90%;
+    margin-top: 5%;
 }
 .slider-section button{
+    margin-top: 10%;
+    padding:3%;
+    background: var(--tertiary);
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: .3s;
+}
+.slider-section-2 button{
     margin-top: 10%;
     padding:3%;
     background: var(--tertiary);
@@ -212,16 +247,30 @@ header .nav-toggle {
 .slider-section button:hover{
     font-size: 1.2rem;
 }
+.slider-section-2 button:hover{
+    font-size: 1.2rem;
+}
 .slider-section button a{
+    color: var(--primary);
+}
+.slider-section-2 button a{
     color: var(--primary);
 }
 .slider-section .content-2{
     text-align: center;
-    padding: 10%;
+    padding: 2%;
+}
+.slider-section-2 .content-2{
+    text-align: center;
+    padding: 2%;
 }
 .slider-section img{
     margin: auto;
-    width: 70%;
+    width: 65%;
+}
+.slider-section-2 img{
+    margin: auto;
+    width: 65%;
 }
 @media (max-width:768px){
     .slider-section{
@@ -241,20 +290,18 @@ header .nav-toggle {
     }
 }
 
-
-
 .btn-left,
-.btn-right {
+.btn-right{
     display: flex;
     position: absolute;
     top: 50%;
     font-size: 1.5rem;
-    background-color: transparent;
+    background-color: #333333d4;
     border-radius: 50%;
     padding: 5px;
     font-weight: 600;
     cursor: pointer;
-    color: var(--secondary);
+    color: var(--primary);
     transform: translate(0,-50%);
     transition: .5s ease;
     user-select: none;
@@ -262,8 +309,7 @@ header .nav-toggle {
 
 .btn-left:hover,
 .btn-right:hover {
-    background-color: #333333d4;
-    color: #fff;
+    font-size: 2rem;
 }
 
 .btn-left {
@@ -273,4 +319,24 @@ header .nav-toggle {
 .btn-right {
     right: 10px;
 }
-
+.benefits{
+    width: 99%;
+    margin: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 20px;
+    padding: 5%;
+    background: url(/img/Fondos/Fondo\ Beneficios.png)center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.benefits h1{
+    font-size: 2.5rem;
+}
+.benefits section{
+    
+}
+.benefits .item{
+    background: var(--primary);
+    margin-top: 2px;
+}
