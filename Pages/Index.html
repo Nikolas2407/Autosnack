@@ -32,8 +32,8 @@
 
         <ul class="nav nav-visible">
             <li><a href="">INICIO</a></li>
-            <li><a href="./Maquinas.html">MAQUINAS</a></li>
-            <li><a href="">PROVEEDORES</a></li>
+            <li><a href="#maquinas">MAQUINAS</a></li>
+            <li><a href="#proveedores">PROVEEDORES</a></li>
             <li><a href="">CONTACTO</a></li>
         </ul>
 
@@ -49,13 +49,15 @@
     <div class="container-carousel">
         <div class="carruseles" id="slider">
             <section class="slider-section">
-                <div class="content">
+                <div class="content" id="maquinas">
                     <h1>Maquina De Snacks</h1>
                     <p>Las máquinas expendedoras mixtas proporcionan tanto snacks como bebidas en un solo dispositivo,
                         lo que facilita la comodidad y elección al momento de comprar. Ofrecen una variedad de productos
                         como papas fritas, galletas, ponqués y dulces. Además, cuentan con sistemas de pago que incluyen
                         monedero y billetero.</p>
                     <button><a href="">Conoce mas aqui</a></button>
+                    <div class="btn-left" onclick="left()"><a href=""></a><ion-icon name="chevron-back-outline"></ion-icon></div>
+                    <div class="btn-right" onclick="right()"><a href="#"></a><ion-icon name="chevron-forward-outline"></ion-icon></div>
                 </div>
                 <div class="content-2">
                     <img src="/img/Maquinas/Snacks/Snacks 2-1.png" alt="">
@@ -92,8 +94,7 @@
             </section>
 
         </div>
-        <div class="btn-left" onclick="left()"><ion-icon name="chevron-back-outline"></ion-icon></div>
-        <div class="btn-right" onclick="right()"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+
     </div>
     <div class="benefits">
         <h1>Beneficios con Autosnack</h1>
@@ -138,7 +139,7 @@
         </section>
     </div>
     <!-- Proveedores -->
-    <div class="proveedores">
+    <div class="proveedores" id="proveedores">
         <h1>Algunos de nuestros <br>
             Proveedores </h1>
         <div class="slider">
@@ -248,36 +249,128 @@
 
     </div>
     <!-- Cobertura -->
-     <div class="Cobertura">
+    <div class="Cobertura">
         <h1>Nuestra Cobertura</h1>
         <span class="line"></span>
-        <!-- <section class="gallery">
-            <a href="" #image1="">
-                <img src="/img/Ciudades/Cali.jpg" alt="">
+        <a href="#galeria" style="display: none;"></a>
+        <section class="gallery">
+            <a href="#image1" class="content-3">
+                <img src="../img/Ciudades/Cali.jpg" alt="">
             </a>
-            <a href="" #image2="">
-                <img src="/img/Ciudades/Barranquilla.jpg" alt="">
+            <a href="#image2" class="content-3">
+                <img src="../img/Ciudades/Barranquilla.jpg" alt="">
             </a>
-            <a href="" #image3="">
-                <img src="/img/Ciudades/Bogota.jpg" alt="">
+            <a href="#image3" class="content-3">
+                <img src="../img/Ciudades/Bogota.jpg" alt="">
             </a>
-            <a href="" #image4="">
-                <img src="/img/Ciudades/Bucaramanga.jpg" alt="">
+            <a href="#image4" class="content-3">
+                <img src="../img/Ciudades/Bucaramanga.jpg" alt="">
             </a>
-            <a href="" #image5="">
-                <img src="/img/Ciudades/Cartagena.jpg" alt="">
+            <a href="#image5" class="content-3">
+                <img src="../img/Ciudades/Cartagena.jpg" alt="">
             </a>
-            <a href="" #image6="">
-                <img src="/img/Ciudades/Medellin.jpg" alt="">
+            <a href="#image6" class="content-3">
+                <img src="../img/Ciudades/Medellin.jpg" alt="">
             </a>
-            <a href="" #image6="">
-                <img src="/img/Ciudades/Ibague.jpg" alt="">
+            <a href="#image7" class="content-3">
+                <img src="../img/Ciudades/Ibague.jpg" alt="">
             </a>
-        </section> -->
-     <!-- <a href="#inicio">Mostrar mas</a>
-     <div id="inicio"></div>
-     <a href="#">Regresa</a> -->
+        </section>
+        <article class="light-box" id="image1">
+            <a href="#image7" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
+            <img src="../img/Ciudades/Cali.jpg" alt="">
+            <a href="#image2" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
+            <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
+        </article>
+        <article class="light-box" id="image2">
+            <a href="#image1" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
+            <img src="../img/Ciudades/Barranquilla.jpg" alt="">
+            <a href="#image3" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
+            <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
+        </article>
+        <article class="light-box" id="image3">
+            <a href="#image2" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
+            <img src="../img/Ciudades/Bogota.jpg" alt="">
+            <a href="#image4" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
+            <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
+        </article>
+        <article class="light-box" id="image4">
+            <a href="#image3" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
+            <img src="../img/Ciudades/Bucaramanga.jpg" alt="">
+            <a href="#image5" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
+            <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
+        </article>
+        <article class="light-box" id="image5">
+            <a href="#image4" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
+            <img src="../img/Ciudades/Cartagena.jpg" alt="">
+            <a href="#image6" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
+            <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
+        </article>
+        <article class="light-box" id="image6">
+            <a href="#image5" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
+            <img src="../img/Ciudades/Medellin.jpg" alt="">
+            <a href="#image7" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
+            <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
+        </article>
+        <article class="light-box" id="image7">
+            <a href="#image6" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
+            <img src="../img/Ciudades/Ibague.jpg" alt="">
+            <a href="#image1" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
+            <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
+        </article>
+
     </div>
+    <div class="banner-4">
+        <h2>Contamos con más <br>
+            de</h2>
+        <h1>+ 4000</h1>
+        <h2>Máquinas en más de <br>
+            15 referencias</h2>
+    </div>
+    <div class="autosnack">
+        <div class="imgs">
+            <img src="../img/Maquinas/Extras/Red.jfif" alt="">
+            <img src="../img/Maquinas/Extras/Black and White.jpg" alt="">
+        </div>
+        <div class="title">
+            <h2>Con AutoSnack descubre la comodidad de las Máquinas Vending</h2>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <section class="section-1">
+                <h1>Autosnack</h1>
+                <div class="logos">
+                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </div>
+            </section>
+            <section class="section-2">
+                <h2>Links</h2>
+                <div class="items-links">
+                    <ul>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Proveedores</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Intranet</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section-3">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Avenida Boyacá #95-51</li>
+                    <li>(601)6433148</li>
+                    <li>info@autosnack.com.co</li>
+                </ul>
+            </section>
+        </div>
+        <small>&copy; 2024 <b>Nicolas Mejia</b> - Todos los Derechos Reservados</small>
+    </footer>
 
     <script src="/Js/Script.Js"></script>
 
