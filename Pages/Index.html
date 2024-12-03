@@ -18,6 +18,9 @@
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -33,67 +36,120 @@
         <ul class="nav nav-visible">
             <li><a href="">INICIO</a></li>
             <li><a href="#maquinas">MAQUINAS</a></li>
-            <li><a href="#proveedores">PROVEEDORES</a></li>
+            <li><a href="./Proveedores.html">PROVEEDORES</a></li>
             <li><a href="">CONTACTO</a></li>
         </ul>
 
     </header>
     <!-- Banner 1 (Tomate un Break con Autosnack) -->
-    <div class="container">
+    <div class="container-1">
         <h1>Tómate un break </h1>
         <h1>con AutoSnack</h1>
         <p>Instala una máquina de vending en tu espacio y ofrece variedad, frescura y comodidad a tus clientes.</p>
         <button><a href="">Contactanos</a></button>
     </div>
     <!-- Carrusel -->
-    <div class="container-carousel">
-        <div class="carruseles" id="slider">
-            <section class="slider-section">
-                <div class="content" id="maquinas">
-                    <h1>Maquina De Snacks</h1>
-                    <p>Las máquinas expendedoras mixtas proporcionan tanto snacks como bebidas en un solo dispositivo,
-                        lo que facilita la comodidad y elección al momento de comprar. Ofrecen una variedad de productos
-                        como papas fritas, galletas, ponqués y dulces. Además, cuentan con sistemas de pago que incluyen
-                        monedero y billetero.</p>
-                    <button><a href="">Conoce mas aqui</a></button>
-                    <div class="btn-left" onclick="left()"><a href=""></a><ion-icon name="chevron-back-outline"></ion-icon></div>
-                    <div class="btn-right" onclick="right()"><a href="#"></a><ion-icon name="chevron-forward-outline"></ion-icon></div>
-                </div>
-                <div class="content-2">
-                    <img src="/img/Maquinas/Snacks/Snacks 2-1.png" alt="">
-                </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <section class="slider-section">
+                    <div class="content">
+                        <h1>Maquina De Snacks</h1>
+                        <p>Las máquinas expendedoras mixtas proporcionan tanto snacks como bebidas en un solo
+                            dispositivo,
+                            lo que facilita la comodidad y elección al momento de comprar. Ofrecen una variedad de
+                            productos
+                            como papas fritas, galletas, ponqués y dulces. Además, cuentan con sistemas de pago que
+                            incluyen
+                            monedero y billetero.</p>
+                        <button class="btn-red"><a href="">Conoce mas aqui</a></button>
 
-            </section>
-            <section class="slider-section-2">
-                <div class="content">
-                    <h1>Maquina De Bebidas Frias</h1>
-                    <p>Ofrecemos todo tipo de gaseosas y refrescos refrigerados, brindado una gran variedad de opciones
-                        al momento de elegir y disponemos de vending de bebidas frías manejando productos
-                        primordialmente en lata y de proveedores reconocidos a nivel nacional.</p>
-                    <button><a href="">Conoce mas aqui</a></button>
-                </div>
-                <div class="content-2">
-                    <img src="/img/Maquinas/Bebidas Frias/" alt="">
-                </div>
+                    </div>
+                    <div class="content-2">
+                        <img src="../img/Maquinas/Snacks/Snacks 2-1.png" alt="">
+                    </div>
 
-            </section>
-            <section class="slider-section-2">
-                <img src="/img/Fondos/4000.png" alt="">
-            </section>
-            <section class="slider-section">
-                <div class="content">
-                    <h1>Maquina OTC</h1>
-                    <p>Podemos ofrecer máquinas que les ayuden a controlar las entregas de elementos como diademas
-                        telefónicas, almohadillas, protectores, elementos de escritorio, elementos de salud, elementos
-                        de dotación.Cuentan con sistemas de pago (monedero y billetero).</p>
-                    <button><a href="">Conoce mas aqui</a></button>
-                </div>
-                <div class="content-2">
-                    <img src="/img/Maquinas/Bebidas Frias/" alt="">
-                </div>
-            </section>
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section class="slider-section-2">
+                    <div class="content">
+                        <h1>Maquina De Bebidas Frias</h1>
+                        <p>Ofrecemos todo tipo de gaseosas y refrescos refrigerados, brindado una gran variedad de
+                            opciones
+                            al momento de elegir y disponemos de vending de bebidas frías manejando productos
+                            primordialmente en lata y de proveedores reconocidos a nivel nacional.</p>
+                        <button class="btn-red"><a href="">Conoce mas aqui</a></button>
+
+                    </div>
+                    <div class="content-2">
+                        <img src="../img/Maquinas/Bebidas Frias/Bebidas Frias 2-2.png" alt="">
+                    </div>
+
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section class="slider-section">
+                    <div class="content">
+                        <h1>Maquina OTC</h1>
+                        <p>Podemos ofrecer máquinas que les ayuden a controlar las entregas de elementos como diademas
+                            telefónicas, almohadillas, protectores, elementos de escritorio, elementos de salud,
+                            elementos
+                            de dotación.
+                            Cuentan con sistemas de pago (monedero y billetero).</p>
+                        <button class="btn-red"><a href="">Conoce mas aqui</a></button>
+
+                    </div>
+                    <div class="content-2">
+                        <img src="../img/Maquinas/Snacks/Snacks 2-1.png" alt="">
+                    </div>
+
+                </section>
+
+            </div>
+            <div class="carousel-item">
+                <section class="slider-section-2">
+                    <div class="content">
+                        <h1>Maquina De Bebidas Calientes</h1>
+                        <p>Nuestras Máquinas expendedoras de café y bebidas calientes de la mejor calidad, programadas
+                            para elaborar un café
+                            con el gramaje y dosificación adecuada utilizando café en grano para una mayor frescura,
+                            ofreciendo una
+                            amplia variedad de bebidas calientes que motivan a los empleados durante su jornada laboral,
+                            con
+                            sistemas de pago en efectivo y tarjeta.</p>
+                        <button class="btn-red"><a href="">Conoce mas aqui</a></button>
+
+                    </div>
+                    <div class="content-2">
+                        <img src="../img/Maquinas/Bebidas Calientes/Bebidas Calientes 4-1.png" alt="">
+                    </div>
+
+                </section>
+            </div>
 
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <div class="btn-left"><a href=""></a><ion-icon name="chevron-back-outline"></ion-icon></div>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <div class="btn-right"><a href="#"></a><ion-icon name="chevron-forward-outline"></ion-icon></div>
+        </button>
+    </div>
 
     </div>
     <div class="benefits">
@@ -254,27 +310,49 @@
         <span class="line"></span>
         <a href="#galeria" style="display: none;"></a>
         <section class="gallery">
-            <a href="#image1" class="content-3">
-                <img src="../img/Ciudades/Cali.jpg" alt="">
-            </a>
-            <a href="#image2" class="content-3">
-                <img src="../img/Ciudades/Barranquilla.jpg" alt="">
-            </a>
-            <a href="#image3" class="content-3">
-                <img src="../img/Ciudades/Bogota.jpg" alt="">
-            </a>
-            <a href="#image4" class="content-3">
-                <img src="../img/Ciudades/Bucaramanga.jpg" alt="">
-            </a>
-            <a href="#image5" class="content-3">
-                <img src="../img/Ciudades/Cartagena.jpg" alt="">
-            </a>
-            <a href="#image6" class="content-3">
-                <img src="../img/Ciudades/Medellin.jpg" alt="">
-            </a>
-            <a href="#image7" class="content-3">
-                <img src="../img/Ciudades/Ibague.jpg" alt="">
-            </a>
+            <div class="content-3">
+                <a href="#image1">
+                    <img src="../img/Ciudades/Cali.jpg" alt="">
+                </a>
+                <p>Cali</p>
+
+            </div>
+            <div class="content-3">
+                <a href="#image2">
+                    <img src="../img/Ciudades/Barranquilla.jpg" alt="">
+                </a>
+                <p>Barranquilla</p>
+            </div>
+            <div class="content-3">
+                <a href="#image3">
+                    <img src="../img/Ciudades/Bogota-2.jpg" alt="">
+                </a>
+                <p>Bogotá</p>
+            </div>
+            <div class="content-3">
+                <a href="#image4" class="content-3">
+                    <img src="../img/Ciudades/Bucaramanga-3.jpg" alt="">
+                </a>
+                <p>Bucaramanga</p>
+            </div>
+            <div class="content-3">
+                <a href="#image5">
+                    <img src="../img/Ciudades/Cartagena-2.jpg" alt="">
+                </a>
+                <p>Cartagena</p>
+            </div>
+            <div class="content-3">
+                <a href="#image6" >
+                    <img src="../img/Ciudades/Medellin-3.jpg" alt="">
+                </a>
+                <p>Medellin</p>
+            </div>
+            <div class="content-3">
+                <a href="#image7">
+                    <img src="../img/Ciudades/Ibague-3.jpeg" alt="">
+                </a>
+                <p>Ibague</p>
+            </div>
         </section>
         <article class="light-box" id="image1">
             <a href="#image7" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
@@ -290,31 +368,31 @@
         </article>
         <article class="light-box" id="image3">
             <a href="#image2" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
-            <img src="../img/Ciudades/Bogota.jpg" alt="">
+            <img src="../img/Ciudades/Bogota-2.jpg" alt="">
             <a href="#image4" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
             <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
         </article>
         <article class="light-box" id="image4">
             <a href="#image3" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
-            <img src="../img/Ciudades/Bucaramanga.jpg" alt="">
+            <img src="../img/Ciudades/Bucaramanga-3.jpg" alt="">
             <a href="#image5" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
             <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
         </article>
         <article class="light-box" id="image5">
             <a href="#image4" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
-            <img src="../img/Ciudades/Cartagena.jpg" alt="">
+            <img src="../img/Ciudades/Cartagena-2.jpg" alt="">
             <a href="#image6" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
             <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
         </article>
         <article class="light-box" id="image6">
             <a href="#image5" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
-            <img src="../img/Ciudades/Medellin.jpg" alt="">
+            <img src="../img/Ciudades/Medellin-3.jpg" alt="">
             <a href="#image7" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
             <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
         </article>
         <article class="light-box" id="image7">
             <a href="#image6" class="next"><ion-icon name="chevron-back-circle-outline"></ion-icon></a>
-            <img src="../img/Ciudades/Ibague.jpg" alt="">
+            <img src="../img/Ciudades/Ibague-3.jpeg" alt="">
             <a href="#image1" class="next"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a>
             <a href="#galeria" class="close"><ion-icon name="close-circle-outline"></ion-icon></a>
         </article>
@@ -371,6 +449,11 @@
         </div>
         <small>&copy; 2024 <b>Nicolas Mejia</b> - Todos los Derechos Reservados</small>
     </footer>
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 
     <script src="/Js/Script.Js"></script>
 
