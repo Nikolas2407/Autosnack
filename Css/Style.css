@@ -131,7 +131,7 @@ header .nav-toggle {
     margin: auto;
     max-width: 99%;
     height: auto;
-    background: url(/img/Fondos/Banner.png)center;
+    background: url(../img/Fondos/Banner.png)center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 7% 5%;
@@ -203,14 +203,14 @@ header .nav-toggle {
     width: 100%;
     display: flex;
     height: auto;
-    background: url(/img/Fondos/Fondo\ Maquinas.png) center;
+    background: url(../img/Fondos/Fondo\ Maquinas.png) center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .carousel .slider-section-2{
 
     height: auto;
-    background: url(/img/Fondos/Fondo\ Maquinas-2.png) center;
+    background: url(../img/Fondos/Fondo\ Maquinas-2.png) center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -340,7 +340,7 @@ header .nav-toggle {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
     border-radius: 20px;
     padding: 2%;
-    background: url(/img/Fondos/Fondo\ Beneficios.png)center;
+    background: url(../img/Fondos/Fondo\ Beneficios.png)center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -427,7 +427,7 @@ header .nav-toggle {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
     border-radius: 20px;
     padding: 2%;
-    background: url(/img/Fondos/Proveedores.png) center;
+    background: url(../img/Fondos/Proveedores.png) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -666,7 +666,7 @@ header .nav-toggle {
     margin: 20px auto;
     max-width: 99%;
     height: auto;
-    background: url(/img/Fondos/4000.png)center;
+    background: url(../img/Fondos/4000.png)center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5% ;
